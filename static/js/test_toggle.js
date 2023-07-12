@@ -8,14 +8,14 @@ const npmIntegration = {
     computed: {
         body_data() {
             const {
-                description,
+                config,
                 is_default,
                 selected_integration: id,
                 save_intermediates_to,
                 add_devdep,
             } = this
             return {
-                description,
+                config,
                 is_default,
                 id,
                 save_intermediates_to,
@@ -62,6 +62,7 @@ const npmIntegration = {
 
         initialState: () => ({
             // toggle: false,
+            config: {},
             error: {},
             save_intermediates_to: '/data/intermediates/sast',
             add_devdep: false,
