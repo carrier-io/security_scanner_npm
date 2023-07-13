@@ -83,7 +83,6 @@ const npmIntegration = {
                 add_devdep,
 
                 status,
-                mode,
             } = this
             return {
                 config,
@@ -92,7 +91,6 @@ const npmIntegration = {
                 save_intermediates_to,
                 add_devdep,
                 status,
-                mode,
             }
         },
         modal() {
