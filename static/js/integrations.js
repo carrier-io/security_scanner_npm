@@ -31,9 +31,9 @@ const npmIntegration = {
                         </h9>
                     </label>
                 </div>
-        
+
                 <div>
-                    <h9>Save intermediates to</h9>
+                    <!--<h9>Save intermediates to</h9>
                     <p>
                         <h13>Optional</h13>
                     </p>
@@ -41,7 +41,7 @@ const npmIntegration = {
                         placeholder=""
                         v-model="save_intermediates_to"
                         :class="{ 'is-invalid': error.save_intermediates_to }">
-                    <div class="invalid-feedback">[[ error.save_intermediates_to ]]</div>
+                    <div class="invalid-feedback">[[ error.save_intermediates_to ]]</div>-->
                 </div>
             </div>
         </template>
@@ -79,7 +79,7 @@ const npmIntegration = {
                 is_default,
                 project_id,
 
-                save_intermediates_to,
+                // save_intermediates_to,
                 add_devdep,
 
                 status,
@@ -88,7 +88,7 @@ const npmIntegration = {
                 config,
                 is_default,
                 project_id,
-                save_intermediates_to,
+                // save_intermediates_to,
                 add_devdep,
                 status,
             }
@@ -217,7 +217,7 @@ const npmIntegration = {
             test_connection_status: 0,
             id: null,
 
-            save_intermediates_to: '/data/intermediates/sast',
+            // save_intermediates_to: '/data/intermediates/sast',
             add_devdep: false,
 
             pluginName: 'security_scanner_npm',
